@@ -183,7 +183,7 @@ An object of type :class:`.time` or :class:`.datetime` may be aware or naive.
 A :class:`.datetime` object ``d`` is aware if both of the following hold:
 
 1. ``d.tzinfo`` is not ``None``
-2. ``d.tzinfo.utcoffset(d)`` does not return ``None``
+2. ``d.tzinfo.utcoffset()`` does not return ``None``
 
 Otherwise, ``d`` is naive.
 
